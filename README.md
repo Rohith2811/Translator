@@ -24,7 +24,7 @@ Additionally, you will need an Azure subscription to access the Translator Text 
 Description: This screenshot shows the home page of the application where users can input text and select a target language.
 
 ### Translation Results
-![Translation Results](screenshots/translation_results.png)
+![Translation Results](Screenshot 2024-03-06 024223.png)
 
 Description: This screenshot displays the translation results after the user submits the form, showing the original text and its translation.
 
