@@ -5,17 +5,15 @@ import uuid
 from dotenv import load_dotenv 
 load_dotenv() 
 
-
-
-
+# creating a Flask app
 app = Flask(__name__)
 
-
+# create a route to render the home HTML page with root URL '/' when accessed via a "GET" request
 @app.route('/', methods=['GET'])
 def index():
 	return render_template('index.html')
 
-# code 
+# create a route to render the home HTML page with root URL '/' when accessed via a "POST" request
 @app.route('/', methods=['POST']) 
 def index_post(): 
 	
@@ -28,8 +26,7 @@ def index_post():
 	endpoint = os.environ['ENDPOINT'] 
 	location = os.environ['LOCATION'] 
 
-	# Indicate that we want to translate and the API 
-	# version (3.0) and the target language 
+	# Constructing the API's URL
 	path = '/translate?api-version=3.0'
 	
 	# Add the target language parameter 
@@ -38,8 +35,7 @@ def index_post():
 	# Create the full URL 
 	constructed_url = endpoint + path + target_language_parameter 
 
-	# Set up the header information, which includes our 
-	# subscription key 
+	# Setting up header
 	headers = { 
 		'Ocp-Apim-Subscription-Key': key, 
 		'Ocp-Apim-Subscription-Region': location, 
@@ -47,22 +43,20 @@ def index_post():
 		'X-ClientTraceId': str(uuid.uuid4()) 
 	} 
 
-	# Create the body of the request with the text to be 
-	# translated 
+	# Create the body of the request with the text to be translated 
 	body = [{'text': original_text}] 
 
-	# Make the call using post 
+	# Make the API call using post 
 	translator_request = requests.post( 
 		constructed_url, headers=headers, json=body) 
 	
-	# Retrieve the JSON response 
+	# Retrieve the JSON response from API
 	translator_response = translator_request.json() 
 	
 	# Retrieve the translation 
 	translated_text = translator_response[0]['translations'][0]['text'] 
 
-	# Call render template, passing the translated text, 
-	# original text, and target language to the template 
+	# Rendering the result HTML page
 	return render_template( 
 		'results.html', 
 		translated_text=translated_text, 
