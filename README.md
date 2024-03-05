@@ -14,7 +14,7 @@ Before running this application, ensure you have the following installed:
 - requests (install via pip: `pip install requests`)
 - python-dotenv (install via pip: `pip install python-dotenv`)
 
-Additionally, you will need an Azure subscription to access the Translator Text API. Obtain the API key, endpoint, and location from the Azure portal and store them in a `.env` file in the root directory of the project. Example `.env` file:
+Additionally, you will need an Azure subscription to access the Translator Text API. Obtain the API key, endpoint, and location from the Azure portal and store them in a `.env` file in the root directory of the project. 
 
 ## Screenshots
 
