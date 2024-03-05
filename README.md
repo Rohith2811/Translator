@@ -16,14 +16,15 @@ Before running this application, ensure you have the following installed:
 
 Additionally, you will need an Azure subscription to access the Translator Text API. Obtain the API key, endpoint, and location from the Azure portal and store them in a `.env` file in the root directory of the project. Example `.env` file:
 
-## Directory Structure
+## Screenshots
 
-translation-web-app/
-│
-├── app.py # Main Flask application file
-├── templates/ # Directory for HTML templates
-│ ├── index.html # HTML template for the input form
-│ └── results.html # HTML template for displaying translation results
-├── requirements.txt # File listing dependencies
-├── .env # File containing API credentials (not included in repository)
-└── README.md # Documentation file
+### Home Page
+![Home Page](screenshots/home_page.png)
+
+Description: This screenshot shows the home page of the application where users can input text and select a target language.
+
+### Translation Results
+![Translation Results](screenshots/translation_results.png)
+
+Description: This screenshot displays the translation results after the user submits the form, showing the original text and its translation.
+
