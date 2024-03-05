@@ -19,12 +19,12 @@ Additionally, you will need an Azure subscription to access the Translator Text 
 ## Screenshots
 
 ### Home Page
-![Home Page](Screenshot 2024-03-06 024205.png)
+![Home Page](https://github.com/Rohith2811/Translator/assets/91714071/ddbe2b59-cf0e-49a2-8fb6-918206a6041e)
 
 Description: This screenshot shows the home page of the application where users can input text and select a target language.
 
 ### Translation Results
-![Translation Results](Screenshot 2024-03-06 024223.png)
+![Translation Results](https://github.com/Rohith2811/Translator/assets/91714071/9cda3406-a116-411a-bd2e-742be5708f66)
 
 Description: This screenshot displays the translation results after the user submits the form, showing the original text and its translation.
 
