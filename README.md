@@ -15,7 +15,9 @@ Before running this application, ensure you have the following installed:
 - python-dotenv (install via pip: `pip install python-dotenv`)
 
 You can install all required dependencies by running the following command:
-  >pip install -r requirements.txt
+```sh
+  pip install -r requirements.txt
+```
 
 The `requirements.txt` file lists all the Python packages and their versions required to run this application.
 Additionally, you will need an Azure subscription to access the Translator Text API. Obtain the API key, endpoint, and location from the Azure portal and store them in a `.env` file in the root directory of the project. 
